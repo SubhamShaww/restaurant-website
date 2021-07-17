@@ -8,10 +8,10 @@ const Nav = () => {
                 F<span>oo</span>dy
             </h1>
             <div>
-                <a href="home">Home</a>
-                <a href="menu">Menu</a>
-                <a href="about">About Us</a>
-                <a href="contact">Contact</a>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
             </div>
             <div>
                 <div className="icon-wrapper">
