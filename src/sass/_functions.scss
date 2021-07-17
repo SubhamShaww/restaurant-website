@@ -1,0 +1,9 @@
+@mixin button-template($color, $background-color, $font-size) {
+    color: $color;
+    cursor: pointer;
+    font-size: $font-size;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: $background-color;
+ }  

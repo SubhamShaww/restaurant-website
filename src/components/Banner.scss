@@ -1,0 +1,50 @@
+@import 'src/sass/var';
+@import 'src/sass/functions';
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.banner__content {
+    width: 90%;
+    display: grid;
+    grid-template-rows: 1fr repeat(2, max-content);
+    row-gap: 3rem;
+    
+    & > h1 {
+        font-size: 6rem;
+        font-family: $heading-font-family;
+    }
+
+    & > .bannercontent__buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        & > button:first-child {
+            margin-right: 1.5rem;
+            @include button-template(#fff, $red-theme-color, $button-font-size);
+        }
+
+        & > button:last-child {
+            @include button-template(#000, #fff, $button-font-size);
+        }
+    }
+
+    & > .bannercontent__review {
+        & > p {
+            font-weight: 500;
+        }
+    }
+}
+
+.banner__image {
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 1rem $red-theme-color);
+    justify-self: flex-end;
+}
+
+
