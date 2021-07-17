@@ -6,4 +6,10 @@
     border-radius: 3rem;
     border: none;
     background-color: $background-color;
- }  
+}  
+
+@mixin button-hover-template($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+    transition: all 0.3s linear;
+}

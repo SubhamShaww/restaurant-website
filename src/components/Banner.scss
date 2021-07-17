@@ -28,8 +28,16 @@
             @include button-template(#fff, $red-theme-color, $button-font-size);
         }
 
+        & > button:first-child:hover {
+            @include button-hover-template($red-theme-color, #fff);
+        }
+
         & > button:last-child {
             @include button-template(#000, #fff, $button-font-size);
+        }
+
+        & > button:last-child:hover {
+            @include button-hover-template(#fff, #000);
         }
     }
 
@@ -70,11 +78,37 @@
     }
 }
 
-.banner__image {
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 0 1rem $red-theme-color);
-    justify-self: flex-end;
+.banner__poster {
+    position: relative;
+
+    & > .poster__details {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        z-index: 3;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background: rgba($color: #fff, $alpha: 0.8);
+        box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.3);
+
+        & > h3 {
+            font-family: $heading-font-family;
+            font-size: 1.5rem;
+           margin-bottom: 0.5rem;
+        }
+
+        & > p > span {
+            color: $red-theme-color;
+            font-weight: 500;
+        }
+    }
+
+    & > .poster__image {
+        height: 100%;
+        object-fit: cover;
+        filter: drop-shadow(0 0 1rem $red-theme-color);
+        justify-self: flex-end;
+    }   
 }
 
 

@@ -20,7 +20,15 @@ const Banner: React.FC = () => {
                     <div className="stars">⭐⭐⭐⭐⭐</div>
                 </div>
             </div>
-            <img className="banner__image" src="biryani.png" alt="banner image" />
+            <div className="banner__poster">
+                <div className="poster__details">
+                    <h3>5%</h3>
+                    <p>
+                        <span>Discount</span> for two orders
+                    </p>
+                </div>
+                <img className="poster__image" src="biryani.png" alt="banner image" />
+            </div>
         </div>
     );
 };

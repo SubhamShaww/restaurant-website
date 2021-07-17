@@ -66,11 +66,11 @@
         & > button {
             @include button-template(#fff, $red-theme-color, $nav-font-size)
         }
+
+        & > button:hover {
+            @include button-hover-template($red-theme-color, #fff);
+        }
     }
 
 }
-
-
-
-
 
