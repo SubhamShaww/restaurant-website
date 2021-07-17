@@ -1,6 +1,5 @@
 import Nav from './components/Nav';
 import Banner from './components/Banner';
-import FoodList from './components/FoodList';
 import './App.scss';
 
 const App: React.FC = () => {
@@ -9,7 +8,6 @@ const App: React.FC = () => {
             <div className="app__body">
                 <Nav />
                 <Banner />
-                <FoodList />
             </div>
         </div>
     );

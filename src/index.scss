@@ -23,3 +23,33 @@ a {
     color: inherit;
 }
 
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 25%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 15%;
+    }
+}
+

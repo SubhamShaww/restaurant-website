@@ -21,7 +21,7 @@
     padding: 3rem 8rem;
     display: grid;
     justify-content: center;
-    grid-template-rows: min-content repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
     row-gap: 4rem;
     background-color: $app-body-background-color;
     border: 0.2rem solid #fff;
