@@ -8,7 +8,7 @@
 }
 
 .app {
-    min-width: $app-width;
+    width: $app-width;
     min-height: $app-height;
     display: grid;
     place-items: center;
@@ -17,10 +17,10 @@
 
 .app__body {
     width: $app-width - 10vw;
-    margin: 4rem 0;
+    height: $app-height;
+    margin-top: 2rem;
     padding: 3rem 8rem;
     display: grid;
-    justify-content: center;
     grid-template-rows: min-content 1fr;
     row-gap: 4rem;
     background-color: $app-body-background-color;
