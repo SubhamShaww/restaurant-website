@@ -6,7 +6,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content;
     align-items: center;
-    font-size: $nav-font-size;
     
     & > h1 {
         font-size: $nav-heading-size;
@@ -25,6 +24,10 @@
         grid-template-columns: repeat(4, 1fr);
         column-gap: 1rem;
 
+        & > a {
+            font-size: $nav-font-size;
+        }
+
         & > a:hover {
             color: $red-theme-color;
         }
@@ -38,10 +41,27 @@
         justify-items: flex-end;
         align-items: center;
 
-        & > svg {
-            font-size: $all-icons-size;
-            cursor: pointer;
+        & > .icon-wrapper {
+            position: relative;
+
+            & > svg {
+                font-size: $all-icons-size;
+                cursor: pointer;
+            }
+
         }
+
+        & > .icon-wrapper::before {
+            position: absolute;
+            right: 0; 
+            top: 0;
+            content: "";
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 50%;
+            background-color: $red-theme-color;
+        }
+
         
         & > button {
             @include button-template(#fff, $red-theme-color, $nav-font-size)

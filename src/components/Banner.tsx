@@ -11,8 +11,13 @@ const Banner: React.FC = () => {
                 </div>
                 <div className="bannercontent__review">
                     <p>Reviews</p>
-                    <div className="review__avatars"></div>
-                    <div>⭐⭐⭐⭐⭐</div>
+                    <div className="review__avatars">
+                        <img src="https://randomuser.me/api/portraits/thumb/men/66.jpg" alt="1st user" />
+                        <img src="https://randomuser.me/api/portraits/thumb/men/62.jpg" alt="2nd user" />
+                        <img src="https://randomuser.me/api/portraits/thumb/men/81.jpg" alt="3rd user" />
+                        <span>40+</span>
+                    </div>
+                    <div className="stars">⭐⭐⭐⭐⭐</div>
                 </div>
             </div>
             <img className="banner__image" src="biryani.png" alt="banner image" />

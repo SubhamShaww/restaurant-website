@@ -14,7 +14,9 @@ const Nav = () => {
                 <a href="contact">Contact</a>
             </div>
             <div>
-                <LocalMallOutlined />
+                <div className="icon-wrapper">
+                    <LocalMallOutlined />
+                </div>
                 <button>Sign Up</button>
             </div>
         </div>
