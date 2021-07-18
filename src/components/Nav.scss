@@ -130,6 +130,12 @@
         & > a:hover {
             color: $red-theme-color;
         }
+
+        @media screen and (min-width: 769px) {
+            & {
+                display: none;
+            }
+        }
     }
 }
 

@@ -8,17 +8,14 @@
 }
 
 .app {
-    width: $app-width;
     min-height: $app-height;
-    display: grid;
-    place-items: center;
+    padding: 4rem;
     background-color: $app-background-color;
 }
 
 .app__body {
-    width: $app-width - 10vw;
-    height: $app-height;
-    margin-top: 2rem;
+    width: auto;
+    height: auto;
     padding: 3rem 8rem;
     display: grid;
     grid-template-rows: min-content 1fr;
